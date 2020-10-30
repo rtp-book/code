@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <script type="module">
+            import {print_stuff} from './__target__/mapping.js';
+            window.print_stuff = print_stuff
+        </script>
+        <button type="button" onclick="print_stuff()">Print to Console</button>
+        <div id="destination"></div>
+    </body>
+</html>
+
