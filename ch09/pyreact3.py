@@ -7,7 +7,7 @@ React = __pragma__('js',
         return window.React;
     }}) ();
     ''',
-    __include__('./node_modules/react/umd/react.development.js')
+    __include__('./node_modules/react/umd/react.production.min.js')
     )
 
 # returns ReactDOM object
@@ -22,7 +22,7 @@ ReactDOM = __pragma__('js',
         return abc1;
     }}) ();
     ''',
-    __include__('./node_modules/react-dom/umd/react-dom.development.js')
+    __include__('./node_modules/react-dom/umd/react-dom.production.min.js')
     )
 
 # Map React javaScript objects to Python identifiers
