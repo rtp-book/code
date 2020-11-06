@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, sans-serif;
+}
+.submitBtn {
+    margin: 10px;
+    color: darkgreen;
+    width: 60px;
+}
+.deleteBtn {
+    color: darkred;
+}
+.editBtn {
+    color: blue;
+}
+button {
+    margin-right: 5px;
+    width: 60px;
+}
+.editing {
+    color: blue;
+}
+.adding {
+    color: darkgreen;
+}
+
