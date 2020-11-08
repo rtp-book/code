@@ -1,0 +1,31 @@
+{
+  "name": "ch19",
+  "version": "1.0.0",
+  "description": "React to Python",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development parcel --log-level 4 index.html --out-dir dist/dev",
+    "build": "NODE_ENV=production parcel --log-level 4 build index.html --no-source-maps --out-dir dist/prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-transcrypt": "^1.0.20"
+  },
+  "parcel-plugin-python": {
+    "command": "python -m transcrypt",
+    "arguments": [
+      "--nomin",
+      "--map",
+      "--verbose"
+    ]
+  }
+}
