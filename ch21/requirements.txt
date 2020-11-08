@@ -1,0 +1,3 @@
+Flask==1.1.2
+Transcrypt==3.7.16
+
