@@ -1,0 +1,37 @@
+{
+  "name": "ch25",
+  "version": "1.0.1",
+  "description": "React to Python",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development parcel --log-level 4 index.html --out-dir dist/dev",
+    "build": "NODE_ENV=production parcel --log-level 4 build index.html --no-source-maps --out-dir dist/prod",
+    "dev": "node dev-server.js",
+    "version": "echo \"version = '$npm_package_version'\" > ./version.py;git add ./version.py",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@material-ui/core": "^4.11.0",
+    "deepcopy": "^2.1.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-ga": "^3.2.0"
+  },
+  "devDependencies": {
+    "http-proxy": "^1.18.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-transcrypt": "^1.0.20"
+  },
+  "parcel-plugin-python": {
+    "command": "python -m transcrypt",
+    "arguments": [
+      "--nomin",
+      "--map",
+      "--verbose"
+    ]
+  }
+}
