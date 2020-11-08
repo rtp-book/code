@@ -4,7 +4,7 @@ from pymui import Box, TextField
 from jsutils import fetch
 
 
-# GAID = 'UA-100000000-1'  # Substitute your own GA Tracking ID here
+GAID = 'UA-100000000-1'  # Substitute your own GA Tracking ID here
 ReactGA.initialize(GAID, {'titleCase': False, 'debug': False,
                           'gaOptions': {'siteSpeedSampleRate': 100}}
                   )
