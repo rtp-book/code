@@ -88,7 +88,7 @@ def App():
     useEffect(updateCount, [taskList, taskFilter])
 
     return el('form', {'onSubmit': handleSubmit},
-              el('div', None, "Number of Tasks: {}".format(taskCount)),
+              el('div', None, f"Number of Tasks: {taskCount}"),
               el('div', None,
                  el('label', {'htmlFor': 'all'}, "All Tasks:"),
                  el('input', {'type': 'radio',
