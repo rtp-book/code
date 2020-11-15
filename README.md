@@ -1,0 +1,6 @@
+## React to Python
+### Part I & II Project Code
+
+This repository contains source code files for *React to Python* Part 1 and Part 2
+
+Source code for Part 3 of the book is in the [Project Repository](https://github.com/rtp-book/project)
