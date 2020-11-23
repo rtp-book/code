@@ -18,7 +18,7 @@ def App():
 
     def handleChange(event):
         target = event['target']
-        setNewItem(target.value)
+        setNewItem(target['value'])
 
     def handleDelete(item):
         new_list = list(listItems)  # Make a copy

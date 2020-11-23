@@ -13,7 +13,7 @@ def App():
 
     def handleChange(event):
         target = event['target']
-        setNewItem(target.value)
+        setNewItem(target['value'])
 
     def ListItems():
         items = []
