@@ -17,7 +17,7 @@ def render(root_component, props, container):
             document.getElementById(container)
         )
 
-    document.addEventListener("DOMContentLoaded", main)
+    document.addEventListener('DOMContentLoaded', main)
 
 
 # JavaScript function mappings
