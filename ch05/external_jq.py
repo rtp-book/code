@@ -6,6 +6,5 @@ def set_click():
 
     jq("#append_btn").click(add_item)
 
-def doc_ready():
-    jq(document).ready(set_click)
+jq(document).ready(set_click)
 
