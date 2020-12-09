@@ -20,16 +20,9 @@
     "react-dom": "^16.14.0"
   },
   "devDependencies": {
-    "http-proxy": "^1.18.1",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.6",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-transcrypt": "^1.0.20"
-  },
-  "parcel-plugin-python": {
-    "command": "python -m transcrypt",
-    "arguments": [
-      "--nomin",
-      "--map",
-      "--verbose"
-    ]
   }
 }

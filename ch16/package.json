@@ -19,13 +19,5 @@
     "jsx-transform-cli": "^0.2.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-transcrypt": "^1.0.20"
-  },
-  "parcel-plugin-python": {
-    "command": "python -m transcrypt",
-    "arguments": [
-      "--nomin",
-      "--map",
-      "--verbose"
-    ]
   }
 }
