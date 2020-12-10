@@ -3,11 +3,11 @@ from pyreact import createElement as el
 
 theme = createMuiTheme({
     'palette': {
-        'primary': colors.teal,
-        'secondary': colors.pink,
+        'primary': colors['teal'],
+        'secondary': colors['pink'],
         'special': {
-            'main': colors.deepPurple[600],
-            'contrastText': colors.common.white,
+            'main': colors['deepPurple'][600],
+            'contrastText': colors['common']['white'],
         },
     },
     'overrides': {
