@@ -1,29 +1,16 @@
-# Load React and ReactDOM JavaScript libraries into local namespace
-React = __pragma__('js',
-    '''
-    (function () {{
-        var exports = {{}};
-        {}  // Puts react in exports and in global window
-        return window.React;
-    }}) ();
-    ''',
-    __include__('./node_modules/react/umd/react.production.min.js')
-    )
+# __pragma__('skip')
+# These are here to quiet the Python linter and are ignored by Transcrypt
+window = None
+document = None
+# __pragma__('noskip')
 
-# returns ReactDOM object
-ReactDOM = __pragma__('js',
-    '''
-    (function () {{
-        var exports = {{}};
-        {}  // Puts react in exports and in global window
-        var abc1 = window.ReactDOM;
-        delete window.React;
-        delete window.ReactDOM;
-        return abc1;
-    }}) ();
-    ''',
-    __include__('./node_modules/react-dom/umd/react-dom.production.min.js')
-    )
+# Create local references to the React and ReactDOM JavaScript libraries
+React = window.React
+ReactDOM = window.ReactDOM
+
+# Remove the React and ReactDOM JavaScript libraries from the global namespace
+# __pragma__('js', 'delete window.React;')
+# __pragma__('js', 'delete window.ReactDOM;')
 
 # Map React javaScript objects to Python identifiers
 createElement = React.createElement

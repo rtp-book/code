@@ -1,4 +1,10 @@
-# Load React and ReactDOM JavaScript libraries into local namespace
+# __pragma__('skip')
+# These are here to quiet the Python linter and are ignored by Transcrypt
+require = None
+document = None
+# __pragma__('noskip')
+
+# Load the React and ReactDOM JavaScript libraries into the local namespace
 React = require('react')
 ReactDOM = require('react-dom')
 

@@ -1,9 +1,9 @@
-# __pragma__ ('skip')
-# These are here to quiet the Python linter and are ignored by transcrypt
+# __pragma__('skip')
+# These are here to quiet the Python linter and are ignored by Transcrypt
 React = None
 ReactDOM = None
 document = None
-# __pragma__ ('noskip')
+# __pragma__('noskip')
 
 # Map React javaScript objects to Python identifiers
 createElement = React.createElement
