@@ -66,10 +66,10 @@ def App():
     return el(Box, None,
               el('form', {'onSubmit': handleSubmit},
                  el(InputLabel,
-                    {'htmlFor': 'newItem', 'color': editColor},
+                    {'htmlFor': 'editBox', 'color': editColor},
                     editLabel
                    ),
-                 el(Input, {'id': 'newItem',
+                 el(Input, {'id': 'editBox',
                             'onChange': handleChange,
                             'value': newItem
                            }

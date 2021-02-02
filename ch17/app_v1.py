@@ -49,12 +49,12 @@ def App():
 
     return el('form', {'onSubmit': handleSubmit},
               el('label',
-                 {'htmlFor': 'newItem',
+                 {'htmlFor': 'editBox',
                   'className': 'adding' if len(editItem) == 0 else 'editing'
                  },
                  "Add Item: " if len(editItem) == 0 else "Edit Item: "
                 ),
-              el('input', {'id': 'newItem',
+              el('input', {'id': 'editBox',
                            'onChange': handleChange,
                            'value': newItem
                           }

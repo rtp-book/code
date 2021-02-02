@@ -118,10 +118,10 @@ def App():
                              }
                    ),
                 ),
-              el('label', {'htmlFor': 'newItem'},
+              el('label', {'htmlFor': 'editBox'},
                  "Edit Task: " if editTask is not None else "Add Task: "
                 ),
-              el('input', {'id': 'newItem',
+              el('input', {'id': 'editBox',
                            'onChange': handleChange,
                            'value': newTask
                           }

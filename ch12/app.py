@@ -12,8 +12,8 @@ def App():
         setNewItem(target['value'])
 
     return el('div', None,
-              el('label', {'htmlFor': 'newItem'}, "New Item: "),
-              el('input', {'id': 'newItem',
+              el('label', {'htmlFor': 'editBox'}, "New Item: "),
+              el('input', {'id': 'editBox',
                            'onChange': handleChange,
                            'value': newItem
                           }

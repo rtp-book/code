@@ -66,10 +66,10 @@ def App():
                        'style': {'fontFamily': 'Arial, sans-serif'}
                       },
               el('label',
-                 {'htmlFor': 'newItem', 'style': editStyle},
+                 {'htmlFor': 'editBox', 'style': editStyle},
                  "Add Item: " if len(editItem) == 0 else "Edit Item: "
                 ),
-              el('input', {'id': 'newItem',
+              el('input', {'id': 'editBox',
                            'onChange': handleChange,
                            'value': newItem
                           }

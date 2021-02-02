@@ -46,10 +46,10 @@ def App():
         return [el(ListItem, {'key': item, 'item': item}) for item in listItems]
 
     return el('form', {'onSubmit': handleSubmit},
-              el('label', {'htmlFor': 'newItem'},
+              el('label', {'htmlFor': 'editBox'},
                  "Add Item: " if len(editItem) == 0 else "Edit Item: "
                 ),
-              el('input', {'id': 'newItem',
+              el('input', {'id': 'editBox',
                            'onChange': handleChange,
                            'value': newItem
                           }

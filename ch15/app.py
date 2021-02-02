@@ -31,10 +31,10 @@ def App():
         setEditItem(item)  # Set the edit item value
 
     return el('form', {'onSubmit': handleSubmit},
-              el('label', {'htmlFor': 'newItem'},
+              el('label', {'htmlFor': 'editBox'},
                  "Add Item: " if len(editItem) == 0 else "Edit Item: "
                 ),
-              el('input', {'id': 'newItem',
+              el('input', {'id': 'editBox',
                            'onChange': handleChange,
                            'value': newItem
                           }

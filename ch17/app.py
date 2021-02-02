@@ -59,10 +59,10 @@ def App():
                           'className': 'form-inline col-10 my-2'
                          },
                  el('label',
-                    {'htmlFor': 'newItem', 'className': editClass},
+                    {'htmlFor': 'editBox', 'className': editClass},
                     "Add Item: " if len(editItem) == 0 else "Edit Item: "
                    ),
-                 el('input', {'id': 'newItem',
+                 el('input', {'id': 'editBox',
                               'onChange': handleChange,
                               'value': newItem,
                               'className': 'form-control ml-2'
