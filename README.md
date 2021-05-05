@@ -1,5 +1,5 @@
 ## React to Python
-### Part I & II Project Code
+### Part I & II Chapter Code
 
 This repository contains source code files for *React to Python* Part 1 and Part 2
 
